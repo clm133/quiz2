@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8"
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="quiz2.css">
 		<title>Quiz 2</title>
 	</head>
 	<body>
@@ -9,7 +10,7 @@
 		<div class="content">
 			<h1>Hi, Welcome to the second quiz!</h1>
 			<p>Make sure the containers below respond to the events or functions implemented with quiz2.js</p>
-			<div class="evens">			
+			<div class="events">			
 				<div class="click">
 					<span>click event</span>
 				</div>
@@ -23,15 +24,23 @@
 					<form>
 						<label for="form">AJAX, yo!</label>
 						<input type="text" id="form" name="form" placeholder="Enter Some Text" />
-						<input value="SUBMIT">
+						<input type="submit" class="submit" value="SUBMIT"> <!-- I added the class of "submit to this element and changed it to a submit button instead of a textbox?" -->
 					</form>
 				</div>
-				div class="timeout">
+				<div class="timeout">
 					<span>timeout function</span>
 				</div>
+				
+				<!-- The following div is for the "Get Title" button for section 2 of the quiz-->
+				<div class="section2">
+					<h3>This Button Was Added for Section 2 of the Quiz</h3>
+					<input type="button" id="getTitle" value="Get Title"></input>
+					<ul class="section2List">
+					</ul>
+				</div>
 			</div>
-		
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="quiz2.js"></script>
 	</body>
 </html>
